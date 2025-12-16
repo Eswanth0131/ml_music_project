@@ -1,0 +1,7 @@
+python train_rnn.py --device=mps --compile=False --n_layer=2 --n_embd=256 --hidden_size=256 --batch_size=64 --max_iters=6000 --out_dir=out_rnn_tiny;
+
+python train_rnn.py --device=mps --compile=False --n_layer=3 --n_embd=384 --hidden_size=384 --batch_size=64 --max_iters=6000 --out_dir=out_rnn_small;
+
+python train_rnn.py --device=mps --compile=False --n_layer=4 --n_embd=576 --hidden_size=576 --batch_size=64 --max_iters=6000 --out_dir=out_rnn_medium;
+
+python train_rnn.py --device=mps --compile=False --n_layer=5 --n_embd=1024 --hidden_size=1024 --batch_size=64 --max_iters=6000 --out_dir=out_rnn_large;

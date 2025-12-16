@@ -1,0 +1,49 @@
+print("\nStarting GPT Tiny")
+!python train.py \
+    --dataset=music_project \
+    --n_layer=3 --n_head=3 --n_embd=192 \
+    --block_size=256 --batch_size=64 --gradient_accumulation_steps=1 \
+    --max_iters=6000 \
+    --learning_rate=6e-4 --min_lr=6e-5 \
+    --device=cuda --compile=True \
+    --out_dir=/content/drive/MyDrive/out_gpt_tiny
+
+print("\nStarting GPT Small")
+!python train.py \
+    --dataset=music_project \
+    --n_layer=4 --n_head=4 --n_embd=320 \
+    --block_size=256 --batch_size=64 --gradient_accumulation_steps=1 \
+    --max_iters=6000 \
+    --learning_rate=6e-4 --min_lr=6e-5 \
+    --device=cuda --compile=True \
+    --out_dir=/content/drive/MyDrive/out_gpt_small
+
+print("\nStarting Model GPT Medium")
+!python train.py \
+    --dataset=music_project \
+    --n_layer=6 --n_head=8 --n_embd=528 \
+    --block_size=256 --batch_size=64 --gradient_accumulation_steps=1 \
+    --max_iters=6000 \
+    --learning_rate=6e-4 --min_lr=6e-5 \
+    --device=cuda --compile=True \
+    --out_dir=/content/drive/MyDrive/out_gpt_medium
+
+print("\nStarting Model GPT Large")
+!python train.py \
+    --dataset=music_project \
+    --n_layer=8 --n_head=12 --n_embd=720 \
+    --block_size=256 --batch_size=64 --gradient_accumulation_steps=1 \
+    --max_iters=6000 \
+    --learning_rate=6e-4 --min_lr=6e-5 \
+    --device=cuda --compile=True \
+    --out_dir=/content/drive/MyDrive/out_gpt_large
+
+print("\nStarting Model GPT XL")
+!python train.py \
+    --dataset=music_project \
+    --n_layer=12 --n_head=12 --n_embd=864 \
+    --block_size=256 --batch_size=32 --gradient_accumulation_steps=2 \
+    --max_iters=6000 \
+    --learning_rate=6e-4 --min_lr=6e-5 \
+    --device=cuda --compile=True \
+    --out_dir=/content/drive/MyDrive/out_gpt_xl_final
