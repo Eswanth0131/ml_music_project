@@ -72,10 +72,10 @@ All models were trained using the **AdamW** optimizer with standard cross-entrop
 
 | Model Size | Type | Layers / Heads | Parameters ($N$) |
 | :--- | :--- | :--- | :--- |
-| Tiny | GPT | 3 / 3 | $\sim$1.4M |
-| Large | GPT | 8 / 12 | $\sim$50M |
-| XL (Best) | GPT | 12 / 12 | $\sim$107M |
-| RNN-Large | LSTM | 5 Layers | $\sim$42.2M |
+| Tiny | GPT | 3 / 3 | 1.4M |
+| Large | GPT | 8 / 12 | 50M |
+| XL (Best) | GPT | 12 / 12 | 107M |
+| RNN-Large | LSTM | 5 Layers | 42.2M |
 
 ### 5\. Running the Final Generation (Part 4)
 
