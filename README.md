@@ -99,4 +99,4 @@ python generate.py
 ```
 
   * **Output:** Generates 12 diverse samples (6 unconditional, 6 conditional) and saves them to `generated_samples.txt`.
-  * **Final Result:** The GPT-XL model achieved a final test loss corresponding to a low perplexity, with approximately $\mathbf{75\%}$ of generated samples being syntactically valid (playable).
+  * **Final Result:** The GPT-XL model achieved a final test loss corresponding to a low perplexity, with approximately 75% of generated samples being syntactically valid (playable).
